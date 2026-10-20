@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#10b981"/>
+  <path d="M4 12 L16 4 L28 12 L16 20 Z" fill="#22c55e"/>
+  <path d="M4 12 L16 20 L16 28 L4 20 Z" fill="#78350f"/>
+  <path d="M16 20 L28 12 L28 20 L16 28 Z" fill="#92400e"/>
+  <polygon points="16,8 20,12 16,16 12,12" fill="#86efac"/>
+</svg>

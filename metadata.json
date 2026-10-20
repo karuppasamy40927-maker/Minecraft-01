@@ -1,0 +1,6 @@
+{
+  "name": "Bedrock Seed Map & Survival Navigator",
+  "description": "Interactive Minecraft Bedrock 1.20+ seed map viewer, structure finder, diamond ore locator, and travel route pathfinder with offline support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

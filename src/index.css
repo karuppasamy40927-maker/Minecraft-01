@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --mc-stone: #1e1e24;
+    --mc-deepslate: #141419;
+    --mc-bedrock: #0d0d11;
+    --mc-grass: #55ab33;
+    --mc-diamond: #55ffff;
+    --mc-gold: #ffaa00;
+    --mc-redstone: #ff3333;
+    --mc-portal: #b545ff;
+    --mc-wood: #866043;
+  }
+
+  body {
+    background-color: #0c0d12;
+    color: #e2e8f0;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+  }
+}
+
+.font-pixel {
+  font-family: 'Silkscreen', 'Press Start 2P', monospace;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Minecraft-styled scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #14161f;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d3345;
+  border-radius: 2px;
+  border: 1px solid #1a1e2b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f475f;
+}
+
+/* Pixel border utilities */
+.mc-box {
+  background: #191c26;
+  border: 2px solid #2e3547;
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.08), inset -1px -1px 0px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.mc-box-gold {
+  border-color: #ffaa00;
+  box-shadow: 0 0 12px rgba(255, 170, 0, 0.25), inset 1px 1px 0px rgba(255, 215, 0, 0.2);
+}
+
+.mc-box-diamond {
+  border-color: #55ffff;
+  box-shadow: 0 0 12px rgba(85, 255, 255, 0.25), inset 1px 1px 0px rgba(85, 255, 255, 0.2);
+}
+
+.mc-box-portal {
+  border-color: #a855f7;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.3), inset 1px 1px 0px rgba(168, 85, 247, 0.2);
+}
+
+/* Animated radar pulse for active waypoint */
+@keyframes radar-pulse {
+  0% { transform: scale(0.9); opacity: 0.9; }
+  50% { transform: scale(1.4); opacity: 0.3; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+.radar-ping {
+  animation: radar-pulse 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
